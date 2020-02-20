@@ -6,3 +6,5 @@ Structure
     css/    CSS FILES
     js/     JAVASCRIPT FILES
     index.html/     MAIN HTML FILE
+
+TODO: MIT License
