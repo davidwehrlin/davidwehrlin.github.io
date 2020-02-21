@@ -5,9 +5,29 @@ Purpose: Styling for html webpage
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.25rem;
+    color: black;
 }
+
+h1,
+h2,
+h3{
+    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #343a40;
+    margin: 20px;
+    border: 0;
+    display: flex;
+
+}
+
+h1 {font-size: 4rem;}
+h2 {font-size: 2rem;}
+h3 {font-size: 1.25rem;font-weight: 900;}
 
 .sidebar {
     top: 0px;
@@ -21,7 +41,6 @@ body {
     height: 100vh;
     background-color: mediumseagreen;
 }
-
 .sidebar img {
     display: block;
     margin-left: auto;
@@ -36,11 +55,29 @@ body {
     font-weight: bolder;
     color: white;
 }
-
-
+.sidebar a.active {
+    opacity: 100%;
+    background-color: mediumseagreen;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    opacity: 100%;
+    background-color: seagreen;
+    color: white;
+  }
+  
 .content {
-    margin-left: 300px;
+    margin-left: 275px;
     background-color: white;
+}
+.content section {min-height: 100vh;}
+.content header {margin-top:35vh;min-height: 65vh;}
+
+.contact-icons a {
+    color: black;
+    margin: 10px;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 900px) {
@@ -51,14 +88,12 @@ body {
         text-align: center;
     }
 
-    .sidebar img {
-        height: 125px;
-        width: 125px;
+    h1 {
+        text-align: center;
     }
 
-    .content {
-        margin: auto;
-    }
+    .sidebar img {height: 125px;width: 125px;}
+    .content {margin: 0; margin-top: -35vh;}
 
 }
 
@@ -70,13 +105,11 @@ body {
         flex-direction: column;
         text-align: center;
     }
-
-    .sidebar img {
-        display: none;
+    h1 {
+        text-align: center;
     }
 
-    .content {
-        margin: auto;
-    }
+    .sidebar img {display: none;}
+    .content {margin: 0; margin-top: -35vh;}
 }
 
