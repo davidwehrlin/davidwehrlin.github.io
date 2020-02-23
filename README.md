@@ -7,4 +7,4 @@ Structure
     js/     JAVASCRIPT FILES
     index.html/     MAIN HTML FILE
 
-TODO: MIT License
+Note: MIT LICENSE
